@@ -39,7 +39,6 @@ $backend = new Backend_connexion($controller);
 $id = $backend->getLesInfos();
 
 try{
-    $BDDConn = new DataBase();
     $auteurAchercher = new auteur($_SESSION['nom'],"","","","");
     $controller = new ControlAuteur2($auteurAchercher,$BDDConn);
     $backend = new Backend_connexion($controller);

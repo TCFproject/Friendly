@@ -32,7 +32,7 @@ class BD implements IBD {
         $test = array();
         foreach($this->genres as $genr){
             if($genr != ''){
-                $SQLStmt = self::$BDD->getBDDConn()->prepare('INSERT INTO toutGenre(id_Genre, id_BD) VALUES (:genre,:BD)');
+                $SQLStmt = $this->BDDConn->getBDDConn()->prepare('INSERT INTO toutGenre(id_Genre, id_BD) VALUES (:genre,:BD)');
                 $SQLStmt->bindValue(':genre', $genr);
                 $SQLStmt->bindValue(':BD', $id_titre['id']);
                 $SQLStmt->execute();

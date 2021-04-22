@@ -74,7 +74,7 @@ $prenom = $_SESSION['prenom'];
 					<article>
 						<div class="content">
 							<header>
-								<h5><?php print $titre2[$i]; ?></h5>
+								<h5><?php print str_replace("_"," ", $titre2[$i]); ?></h5>
 							</header>
 							<div class="image fit">
                                 <a href="<?php print 'presentOeuvre.php?repot='.$repot2[$i].'&titre='.$titre2[$i] ?>">

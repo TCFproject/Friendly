@@ -35,7 +35,7 @@ session_start();
                     foreach ($chapitres as $chapitre){
                 ?>
                 <nav id="<?php echo $chapitre ?>" class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-                    <span style="color: white"><?php echo str_replace("_"," ",$chapitre) ?> </span>
+                    <span style="color: white"><?php echo substr(str_replace("_"," ",$chapitre), 11) ?> </span>
                 </nav>
                 <div id="<?php echo $chapitre ?>_toggle" style="display: none;">
                     <header class="major special">
@@ -47,7 +47,6 @@ session_start();
                             <tr>
                                 <?php
                                 foreach ($assetsOeuvre->getPages($repot,$chapitre) as $pages){
-                                    var_dump($pages);
                                     print '<td><img src='.$pages.'  width="150" height="200" alt=""></td>';
                                 }
                                 ?>
