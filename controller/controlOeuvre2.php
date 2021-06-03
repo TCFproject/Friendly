@@ -5,7 +5,6 @@ class controlOeuvre2 implements IcontrolOeuvre
 {
     private static $slice = 2;
     private static $repertoir = "imageTempo/";
-    private static $list_titre = array();
     public static function getTitres(string $autre = null)
     {
         // TODO: Implement getTitres() method.

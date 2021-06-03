@@ -39,7 +39,7 @@ $assets = new Assets_ControlBD($controller);
 					<!-- Form -->
 					<section>
                         <form method="post" enctype="multipart/form-data" action="assets/php/creationBD.php" name="formulaire_creation_BD"> <!-- action="assets/php/creationBD.php" -->
-                            <h4>Comment s'appellera votre oeuvre ?</h4>
+                            <h4>Quel sera le titre votre oeuvre ?</h4>
                             <input type="text" name="titre" />
                             <h4>Ce sera un : </h4>
                             <div class="4u 12u$(xsmall)">
@@ -52,7 +52,7 @@ $assets = new Assets_ControlBD($controller);
                             </div>
                             <div class="4u$ 12u$(xsmall)">
                                 <input type="radio" id="priority-high" name="cathegorie" value="3" />
-                                <label for="priority-high">BD (comme Tintin ou Astérix)</label>
+                                <label for="priority-high">BD</label>
                             </div>
                             <h4>Quelles seront ses genres ?</h4>
                             <p id="nom_genre" style="display: none;"><?php echo(json_encode($assets->getLesGenresBD())); ?></p>

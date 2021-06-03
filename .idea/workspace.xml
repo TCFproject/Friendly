@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a62f3f-2219-4e49-8502-3d084d680dcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/php/Assets_ControlBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/Assets_ControlBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php/Backend_creationBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/Backend_creationBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php/ajouteChapitre.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/ajouteChapitre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/php/creationBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/creationBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/IcontrolBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/IcontrolBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controlBD2.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controlBD2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controlOeuvre2.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controlOeuvre2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generic.php" beforeDir="false" afterPath="$PROJECT_DIR$/generic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageTempo/CHANG-FONG/Dragon_Ball/chapitre_1;L'enfant_singe/page1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageTempo/CHANG-FONG/Dragon_Ball/maxresdefault.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/BD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/IBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/IBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nouvelleBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/nouvelleBD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentOeuvre.php" beforeDir="false" afterPath="$PROJECT_DIR$/presentOeuvre.php" afterDir="false" />
     </list>
@@ -23,6 +34,14 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -31,13 +50,20 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/siteCV" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\messites\Friendly" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,6 +89,28 @@
       <updated>1619115988120</updated>
       <workItem from="1619115989441" duration="124000" />
       <workItem from="1619116115426" duration="3216000" />
+      <workItem from="1619125176592" duration="735000" />
+      <workItem from="1619171398478" duration="9830000" />
+      <workItem from="1619281917061" duration="1402000" />
+      <workItem from="1619359846920" duration="8166000" />
+      <workItem from="1619444031052" duration="108000" />
+      <workItem from="1619445609811" duration="1128000" />
+      <workItem from="1619448311468" duration="943000" />
+      <workItem from="1619542850290" duration="3960000" />
+      <workItem from="1619614007629" duration="103000" />
+      <workItem from="1619691098176" duration="3453000" />
+      <workItem from="1619704567552" duration="4439000" />
+      <workItem from="1619730911614" duration="39000" />
+      <workItem from="1620234257383" duration="2472000" />
+      <workItem from="1620385998067" duration="1204000" />
+      <workItem from="1620738314372" duration="1745000" />
+      <workItem from="1620847998803" duration="2561000" />
+      <workItem from="1621007100628" duration="1043000" />
+      <workItem from="1621329698720" duration="3579000" />
+      <workItem from="1621445179827" duration="6124000" />
+      <workItem from="1621527914562" duration="6424000" />
+      <workItem from="1621601292609" duration="8878000" />
+      <workItem from="1621848391602" duration="177000" />
     </task>
     <servers />
   </component>
@@ -74,21 +122,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/assets/php/creationBD.php</url>
-          <line>48</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -3,16 +3,19 @@ require_once ('../../controller/controlOeuvre2.php');
 require_once ('assetsOeuvre.php');
 
 $assetsOeuvre = new assetsOeuvre(new controlOeuvre2());
-$nomChapitre = isset($_POST['nomChapitre'])?$_POST['nomChapitre']:'';
-$nouveauChapitre = str_replace( " ","_", $nomChapitre);
+$lesCHapitres = array();
+$lesCHapitres[$_POST['numeroChapitre1']] = str_replace( " ","_", $_POST['nomChapitre1']);
+$lesCHapitres[$_POST['numeroChapitre2']] = str_replace( " ","_", $_POST['nomChapitre2']);
+$lesCHapitres[$_POST['numeroChapitre3']] = str_replace( " ","_", $_POST['nomChapitre3']);
+$lesCHapitres[$_POST['numeroChapitre4']] = str_replace( " ","_", $_POST['nomChapitre4']);
+$lesCHapitres[$_POST['numeroChapitre5']] = str_replace( " ","_", $_POST['nomChapitre5']);
 $route = isset($_GET['repotPage'])?$_GET['repotPage']:'';
-//var_dump($route);
 $Chapitre = $assetsOeuvre->getChapitre('../../'.$route);
-//var_dump($Chapitre);
-$ajoutChapitre = sizeof($Chapitre)+1;
-//var_dump($ajoutChapitre);
-if ($nomChapitre != '' || $nomChapitre != null){
-    mkdir('../../'.$route.'/chapitre_'.$ajoutChapitre.';'.$nouveauChapitre, 0777);
+
+foreach ($lesCHapitres as $CHapitre => $num){
+    if ($num != '' || $num != null){
+        mkdir('../../'.$route.'/chapitre_'.strval($CHapitre).';'.$num, 0777);
+    }
 }
 header('Location:'.$_SERVER['HTTP_REFERER']);
 ?>

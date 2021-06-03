@@ -42,7 +42,7 @@ $chapitres = $assetsOeuvre->getChapitre($reposi);
                             $option.= " selected";
                         }
                         $option.= ">" ;
-                        $option.= $img ;
+                        $option.= str_replace("_"," ", $img) ;
                         $option.='</option>';
                         print $option;
                     }

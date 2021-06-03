@@ -26,22 +26,32 @@ session_start();
 		<!-- Main -->
         <section id="main" >
             <div class="inner">
-                <h1>Tes pages</h1><!---->
+                <h1>Chapitres</h1><!---->
                 <form method="post" action="assets/php/ajouteChapitre.php?repotPage=<?php print $repot ?>">
-                    <input type="text" name="nomChapitre" placeholder="Nom du chapitre">
+                    <input type="text" size="5" name="nomChapitre1" placeholder="Nom du chapitre à ajouter">
+                    <input type="number" name="numeroChapitre1" placeholder="Numéro du chapitre" min="1">
+                    <input type="text" size="5" name="nomChapitre2" placeholder="Nom du chapitre à ajouter">
+                    <input type="number" name="numeroChapitre2" placeholder="Numéro du chapitre" min="1">
+                    <input type="text" size="5" name="nomChapitre3" placeholder="Nom du chapitre à ajouter">
+                    <input type="number" name="numeroChapitre3" placeholder="Numéro du chapitre" min="1">
+                    <input type="text" size="5" name="nomChapitre4" placeholder="Nom du chapitre à ajouter">
+                    <input type="number" name="numeroChapitre4" placeholder="Numéro du chapitre" min="1">
+                    <input type="text" size="5" name="nomChapitre5" placeholder="Nom du chapitre à ajouter">
+                    <input type="number" name="numeroChapitre5" placeholder="Numéro du chapitre" min="1"><br>
                     <input type="submit" class="special" id="newChapter">
                 </form>
                 <?php
                     foreach ($chapitres as $chapitre){
                 ?>
                 <nav id="<?php echo $chapitre ?>" class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-                    <span style="color: white"><?php echo substr(str_replace("_"," ",$chapitre), 11) ?> </span>
+                    <span style="color: white"><?php echo str_replace(";"," : ", str_replace("_"," ",$chapitre)); ?> </span>
                 </nav>
                 <div id="<?php echo $chapitre ?>_toggle" style="display: none;">
                     <header class="major special">
                         <form enctype="multipart/form-data" method="post" action="assets/php/ajoutePage.php?repot=<?php print $repot ?>&page=<?php print $chapitre ?>">
                             <input type="file" name="page" />
                             <input type="submit" />
+                            <h3>Pages</h3>
                         </form>
                         <table>
                             <tr>

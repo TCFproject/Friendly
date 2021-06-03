@@ -14,7 +14,7 @@ $extension_autorise = array('.jpg', '.jpeg', '.png', '.JPG', '.JEPG', '.PNG');
 
 $BDDConn = new DataBase();
 
-$donneInfo = new BD("","","",array());
+$donneInfo = new BD("","","",array(), date("Y/m/d"));
 $controllerBD = new controlBD2($donneInfo,$BDDConn);
 $backendThis = new Backend_creationBD($controllerBD);
 
@@ -45,7 +45,7 @@ try{
     $id = $backend->getLesInfos();
 
     try{
-        $nouvelleBD = new BD($replaceTitre,$descr,$catheg,$genres);
+        $nouvelleBD = new BD($replaceTitre,$descr,$catheg,$genres, date("Y/m/d"));
         $controllerBD = new controlBD2($nouvelleBD,$BDDConn);
         $backendThis = new Backend_creationBD($controllerBD);
         var_dump(intval( $id['id']));

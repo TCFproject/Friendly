@@ -11,7 +11,7 @@ class Backend_creationBD
     }
 
     public function getLesGenresBD(int $id = null){
-        return $this->controlBD::getLesGenresBD($id);
+        return $this->controlBD::getGenreBD($id);
     }
     public function getInfosBD(){
         return $this->controlBD::getInfosBD();
