@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a62f3f-2219-4e49-8502-3d084d680dcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/php/Assets_ControlBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/Assets_ControlBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/php/Backend_creationBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/Backend_creationBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/php/ajouteChapitre.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/ajouteChapitre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/php/creationBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/creationBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/IcontrolBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/IcontrolBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controlBD2.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controlBD2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controlOeuvre2.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controlOeuvre2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generic.php" beforeDir="false" afterPath="$PROJECT_DIR$/generic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imageTempo/CHANG-FONG/Dragon_Ball/chapitre_1;L'enfant_singe/page1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imageTempo/CHANG-FONG/Dragon_Ball/maxresdefault.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/BD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/IBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/IBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nouvelleBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/nouvelleBD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentOeuvre.php" beforeDir="false" afterPath="$PROJECT_DIR$/presentOeuvre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/generic.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/generic.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/siteCV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -111,6 +93,7 @@
       <workItem from="1621527914562" duration="6424000" />
       <workItem from="1621601292609" duration="8878000" />
       <workItem from="1621848391602" duration="177000" />
+      <workItem from="1630333439080" duration="207000" />
     </task>
     <servers />
   </component>
