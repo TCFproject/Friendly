@@ -1,20 +1,20 @@
 <?php
-session_start();
-require_once ('../../model/DataBase.php');
-require_once ('../../model/BD.php');
-require_once ('../../controller/controlBD2.php');
-require_once ('../../model/auteur.php');
-require_once ('../../controller/ControlAuteur2.php');
-require_once ('Backend_connexion.php');
-require_once ('Backend_creationBD.php');
-var_dump($_FILES);
+require_once ('model/DataBase.php');
+require_once ('model/BD.php');
+require_once ('controller/controlBD2.php');
+require_once ('model/auteur.php');
+require_once ('controller/ControlAuteur2.php');
+require_once ('assets/php/Backend_connexion.php');
+require_once ('assets/php/Backend_creationBD.php');
+
+var_dump($_POST);
 $nom_Image = $_FILES['couverture']['name'];
 $Image_Extension = strrchr($nom_Image, ".");
 $extension_autorise = array('.jpg', '.jpeg', '.png', '.JPG', '.JEPG', '.PNG');
 
 $BDDConn = new DataBase();
 
-$donneInfo = new BD("","","",array());
+$donneInfo = new BD("","","",array(),"");
 $controllerBD = new controlBD2($donneInfo,$BDDConn);
 $backendThis = new Backend_creationBD($controllerBD);
 
@@ -22,7 +22,9 @@ $genreListe = $backendThis->getLesGenresBD();
 
 $genres = array();
 foreach ($genreListe as $value){
-    $genres[$value['libelle']] = isset($_POST[$value['libelle']])?$_POST[$value['libelle']]:'';
+    if (isset($_POST[$value['libelle']])?$_POST[$value['libelle']]:'' != ''){
+        $genres[$value['libelle']] = isset($_POST[$value['libelle']])?$_POST[$value['libelle']]:'';
+    }
 }
 var_dump($genres);
 
@@ -37,36 +39,19 @@ $auteurAchercher = new auteur($_SESSION['nom'],"","","","");
 $controller = new ControlAuteur2($auteurAchercher,$BDDConn);
 $backend = new Backend_connexion($controller);
 $id = $backend->getLesInfos();
+var_dump($id['id']);
 
-try{
-    $auteurAchercher = new auteur($_SESSION['nom'],"","","","");
-    $controller = new ControlAuteur2($auteurAchercher,$BDDConn);
-    $backend = new Backend_connexion($controller);
-    $id = $backend->getLesInfos();
-
-    try{
-        $nouvelleBD = new BD($replaceTitre,$descr,$catheg,$genres);
-        $controllerBD = new controlBD2($nouvelleBD,$BDDConn);
-        $backendThis = new Backend_creationBD($controllerBD);
-        var_dump(intval( $id['id']));
-
-        $link = '../../imageTempo/'.$_SESSION['nom'];
-
-        $backendThis->creerUneBD(intval($id['id']));
-        mkdir($link.'/'.$replaceTitre);
-        if (!empty($_FILES)){
-            if (in_array($Image_Extension, $extension_autorise)){
-                $chemin_couverture = $link.'/'.$replaceTitre.'/'.$_FILES['couverture']['name'];
-                move_uploaded_file($_FILES['couverture']['tmp_name'], $chemin_couverture);
-            }
-        }
-        header('Location:../../listeDeTesOeuvres.php');
-    }
-    catch(Exception $e){
-        var_dump($e);
+$chemin = 'imageTempo/'.$_POST['titre'];
+$newBD = new BD($replaceTitre, $_POST['description'],$_POST['cathegorie'], $genres,$chemin);
+$controller = new controlBD2($newBD,$BDDConn);
+$assets = new Backend_creationBD($controller);
+$assets->creerUneBD($id['id']);
+mkdir($chemin);
+if (!empty($_FILES)){
+    if (in_array($Image_Extension, $extension_autorise)){
+        $_FILES['couverture']['name'] = 'couverture.jpg';
+        move_uploaded_file($_FILES['couverture']['tmp_name'], $chemin.'/'.$_FILES['couverture']['name']);
     }
 }
-catch(Exception $e){
-    var_dump($e);
-}
+header('Location: '.$_SERVER['HTTP_REFERER']);
 ?>

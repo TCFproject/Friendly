@@ -2,10 +2,10 @@
 require_once ("IDataBase.php");
 
 class DataBase implements IDataBase {
-    private $server = 'reader-saga.com:3306';
-    private $username = 'lalq5495_base_user';
-    private $password = 'base_user';
-    private $database = 'lalq5495_manga_writer';
+    private $server = 'localhost:3308';
+    private $username = 'root';
+    private $password = '';
+    private $database = 'mangaAma';
 
     public function getBDDConn(){
         // TODO: Implement getBDDConn() method.

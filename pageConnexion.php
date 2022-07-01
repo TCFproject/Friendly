@@ -1,4 +1,17 @@
 
+<?php
+if (isset($_POST['conne_email']) && isset($_POST['conne_mdp'])){
+    include_once 'assets/php/connexion.php';
+}
+if (isset($_POST['nom'])
+    && isset($_POST['prenom'])
+    && isset($_POST['email'])
+    && isset($_POST['mdp'])
+    && isset($_POST['pseudo'])
+    && isset($_POST['confmdp'])){
+    include_once 'assets/php/inscription.php';
+}
+?>
 <!DOCTYPE HTML>
 <!--
 	Introspect by TEMPLATED
@@ -26,7 +39,7 @@
 					<header class="major special"></header>
                     <section>
                         <h3>Connexion</h3>
-                        <form method="post" action="assets/php/connexion.php" name="formulaire_connexion">
+                        <form method="post" name="formulaire_connexion">
                             <div class="row uniform 50%">
                                 <div class="12u$">
                                     <input type="email" name="conne_email" id="conn-email" placeholder="Email" />
@@ -60,7 +73,7 @@
 					<!-- Form -->
 					<section>
 						<h3>Inscrivez-vous</h3>
-						<form name="formulaire_inscription" action="assets/php/inscription.php" id="demo-formulaire" method="post"> <!-- action = asset/php/inscription.php -->
+						<form name="formulaire_inscription" id="demo-formulaire" method="post"> <!-- action = asset/php/inscription.php -->
 							<div class="row uniform 50%">
 								<div class="6u 12u$(xsmall)">
 									<input type="text" name="nom" id="demo-nom" value="" placeholder="Nom" />

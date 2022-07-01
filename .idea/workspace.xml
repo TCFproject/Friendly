@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b7a62f3f-2219-4e49-8502-3d084d680dcb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php/creationBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/creationBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controlOeuvre2.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controlOeuvre2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageTempo/CHANG-FONG/Dragon_Ball/chapitre_1;L'enfant_singe/page1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageTempo/CHANG-FONG/Dragon_Ball/maxresdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imageTempo/chang-fong/Dragon_Ball/chapitre_6;frsdrg/page1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listeDeTesOeuvres.php" beforeDir="false" afterPath="$PROJECT_DIR$/listeDeTesOeuvres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/BD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/DataBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/DataBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nouvelleBD.php" beforeDir="false" afterPath="$PROJECT_DIR$/nouvelleBD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageConnexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/pageConnexion.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +90,12 @@
       <workItem from="1619116115426" duration="3216000" />
       <workItem from="1632386776194" duration="69000" />
       <workItem from="1633421755061" duration="1489000" />
-      <workItem from="1651749799475" duration="298000" />
+      <workItem from="1651749799475" duration="2035000" />
+      <workItem from="1651827846012" duration="1403000" />
+      <workItem from="1651927119903" duration="2752000" />
+      <workItem from="1652030625169" duration="14771000" />
+      <workItem from="1652103645234" duration="44000" />
+      <workItem from="1652211399928" duration="191000" />
     </task>
     <servers />
   </component>

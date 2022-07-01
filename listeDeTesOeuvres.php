@@ -1,9 +1,15 @@
 <?php
 session_start();
+$fichier_de_base = 'imageTempo/';
+require_once ('model/BD.php');
+require_once ('controller/controlBD2.php');
+require_once ('assets/php/Assets_ControlBD.php');
+
 require_once ("controller/controlOeuvre2.php");
 require_once ('assets/php/assetsOeuvre.php');
 $assetsOeuvre = new assetsOeuvre(new controlOeuvre2());
 $nom = $_SESSION['nom'];
+//$BD = new BD();
 $repotAuteur = $assetsOeuvre->getChemins($nom);
 $listerOeuvres = $assetsOeuvre->getLesOeuvresAuteur($nom);
 include("htmlFile/identif.php");

@@ -1,14 +1,14 @@
 <?php
-require_once ('../../model/auteur.php');
-require_once('../../controller/ControlAuteur2.php');
-require_once('../../model/DataBase.php');
-require_once ('Backend_connexion.php');
+require_once ('model/auteur.php');
+require_once('controller/ControlAuteur2.php');
+require_once('model/DataBase.php');
+require_once ('assets/php/Backend_connexion.php');
 
-$nom = (isset($_POST['nom'])?$_POST['nom']:'');
-$prenom = (isset($_POST['prenom'])?$_POST['prenom']:'');
-$email = (isset($_POST['email'])?$_POST['email']:'');
-$mdp = (isset($_POST['mdp'])?$_POST['mdp']:'');
-$pseudo = (isset($_POST['pseudo'])?$_POST['pseudo']:'');
+$nom = ($_POST['nom']);
+$prenom = ($_POST['prenom']);
+$email = ($_POST['email']);
+$mdp = ($_POST['mdp']);
+$pseudo = ($_POST['pseudo']);
 
 $BDDConn = new DataBase();
 $inscriptionAuteur = new auteur($nom, $prenom, $email, $mdp, $pseudo);
@@ -18,11 +18,11 @@ $backend_control = new Backend_connexion($controller);
 var_dump($nom ." ". $prenom ." ". $email ." ". $mdp);
 if (!$backend_control->inscription()){
     try{
-        mkdir("../../imageTempo/".$nom, 0755);
-        header('Location:../../pageConnexion.php?codeError=reussit');
+        //mkdir("../../imageTempo/".$nom, 0755);
+        header('Location:pageConnexion.php?codeResult=reussit');
     }
     catch (Exception $e){
-        header('Location:../../pageConnexion.php?codeError=echec');
+        header('Location:pageConnexion.php?codeResult=echec');
     }
 }
 ?>

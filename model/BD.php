@@ -7,22 +7,26 @@ class BD implements IBD {
     private $id_Cathe;
     private $genres;
     private $BDDConn;
+    private $path;
 
-    public function __construct($titre, $descri, $id_cathe, array $genres){
+    public function __construct($titre, $descri, $id_cathe, array $genres, $path){
         $this->Titre = $titre;
         $this->Descri = $descri;
         $this->id_Cathe = $id_cathe;
         $this->genres = $genres;
+        $this->path = $path;
     }
 
     public function newBD($idauteur){
         // TODO: Implement newBD() method.
-        $uneNouvelleBD = 'INSERT INTO BD(id_auteur,titre,description,id_cathe) VALUE (:auteur,:titre,:descrip,:cathe)';
+        $uneNouvelleBD = 'INSERT INTO BD(id_auteur,titre,description,id_cathe,date_public,chemin) VALUE (:auteur,:titre,:descrip,:cathe,:date_public,:path)';
         $SQLStmt = $this->BDDConn->getBDDConn()->prepare($uneNouvelleBD);
         $SQLStmt->bindValue(':auteur',$idauteur);
         $SQLStmt->bindValue(':titre',$this->Titre);
         $SQLStmt->bindValue(':descrip',$this->Descri);
         $SQLStmt->bindValue(':cathe',$this->id_Cathe);
+        $SQLStmt->bindValue(':date_public',date("Y/m/d"));
+        $SQLStmt->bindValue(':path',$this->path);
         $SQLStmt->execute();
 
         $SQLStmt = $this->BDDConn->getBDDConn()->prepare('SELECT id FROM BD WHERE titre = :titre');
@@ -40,6 +44,11 @@ class BD implements IBD {
             }
         }
         return $test;
+    }
+
+    function getAuteurBD(int $id){
+        $infoBD = 'SELECT * FROM BD WHERE id_auteur = :id_auteur';
+
     }
 
     function getInfoBD()

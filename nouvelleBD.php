@@ -1,13 +1,17 @@
 <?php
 session_start();
 
+if (isset($_POST['titre']) && isset($_FILES)){
+    include_once 'assets/php/creationBD.php';
+}
+
 require_once ('model/DataBase.php');
 require_once ('model/BD.php');
 require_once ('controller/controlBD2.php');
 require_once ('assets/php/Assets_ControlBD.php');
 
 $BDDConn = new DataBase();
-$infoPostBD = new BD("","","", array());
+$infoPostBD = new BD("","","", array(), "");
 $controller = new controlBD2($infoPostBD, $BDDConn);
 $assets = new Assets_ControlBD($controller);
 ?>
@@ -38,7 +42,7 @@ $assets = new Assets_ControlBD($controller);
 					<header class="major special"></header>
 					<!-- Form -->
 					<section>
-                        <form method="post" enctype="multipart/form-data" action="assets/php/creationBD.php" name="formulaire_creation_BD"> <!-- action="assets/php/creationBD.php" -->
+                        <form method="post" enctype="multipart/form-data" name="formulaire_creation_BD"> <!-- action="assets/php/creationBD.php" -->
                             <h4>Comment s'appellera votre oeuvre ?</h4>
                             <input type="text" name="titre" />
                             <h4>Ce sera un : </h4>
